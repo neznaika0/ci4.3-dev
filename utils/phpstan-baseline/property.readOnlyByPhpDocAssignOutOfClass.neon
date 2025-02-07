@@ -43,6 +43,11 @@ parameters:
             path: ../../tests/system/CommonFunctionsTest.php
 
         -
+            message: '#^@readonly property Config\\Modules\:\:\$registrarHasData is assigned outside of its declaring class\.$#'
+            count: 2
+            path: ../../tests/system/Config/BaseConfigTest.php
+
+        -
             message: '#^@readonly property Config\\Modules\:\:\$aliases is assigned outside of its declaring class\.$#'
             count: 1
             path: ../../tests/system/Events/EventsTest.php
