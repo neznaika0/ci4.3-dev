@@ -273,6 +273,7 @@ class BaseConfig
         }
 
         $shortName = (new ReflectionClass($this))->getShortName();
+        $worker    = null;
 
         if (isset(static::$moduleConfig->registrarHasData)) {
             // Get all public properties for this config
